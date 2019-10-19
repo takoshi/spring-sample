@@ -18,7 +18,7 @@ public class HelloWorldRestController {
         ModelAndView modelAndView = new ModelAndView();
 
         modelAndView.setViewName("index");
-        modelAndView.addObject("message", "Hello, world!");
+        modelAndView.addObject("message", "こんにちは，世界!");
 
         return new HelloWorldResponse(200,viewRenderHelper.render(modelAndView));
     }
